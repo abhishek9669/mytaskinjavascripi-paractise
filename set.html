@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var myset =  new Set();
+    
+    myset.add("name")
+    myset.add(123)
+    myset.add("abs")
+    console.log(myset)
+    console.log(myset.has("name")); // this us check the value kya y value define h ya nhi this is return true and false
+
+
+    // for (let item of myset){
+    //         console.log(item);
+    //     }
+
+    myset.forEach( (item)=>{
+            console.log(item);
+        } )
+
+
+        // conver set to arry
+
+        let x = Array.from(myset)
+        console.log(x)
+
+</script>
+<body>
+    
+</body>
+</html>

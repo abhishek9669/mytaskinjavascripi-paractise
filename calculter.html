@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+//    
+
+   let add = ()=>{
+       document.getElementById("operator").setAttribute("value","+")
+
+   }
+   let sub = ()=>{
+       document.getElementById("operator").setAttribute("value","-")
+
+   }
+   let multi = ()=>{
+       document.getElementById("operator").setAttribute("value","*")
+
+   }
+   let div = ()=>{
+       document.getElementById("operator").setAttribute("value","/")
+
+   }
+   let result = ()=>{
+    let v1 = document.getElementById("fvalue").value;
+    let v2 = document.getElementById("operator").value;
+    let v3 = document.getElementById("lvalue").value;
+   console.log(v1,v2,v3)
+
+    switch (v2) {
+        case "+":
+            var res = parseInt(v1) + parseInt(v3);
+            //alert(res);
+            document.getElementById("myanswer").innerHTML = res;
+            
+            break;
+        case "-":
+        var res = parseInt(v1) - parseInt(v3);
+            //alert(res);
+            document.getElementById("myanswer").innerHTML = res;
+
+         break;
+        case "*":
+        var res = parseInt(v1) * parseInt(v3);
+            //alert(res);
+            document.getElementById("myanswer").innerHTML = res;
+
+         break;
+        case "/":
+        var res = parseInt(v1) / parseInt(v3);
+            //alert(res);
+            document.getElementById("myanswer").innerHTML = res;
+
+         break;
+    
+        default:
+            break;
+    }
+
+   }
+</script>
+<body>
+    <form>
+       
+        <label>first value</label>
+        <input id="fvalue" type="text"  placeholder="Enter First Value"  /><br><br>
+
+        <label>Operator</label>
+        <input id="operator" type="text" value="" placeholder="Enter Your Operator" /><br/><br>
+
+        <label>second value</label>
+        <input id="lvalue" type="text" placeholder="Enter Second Vlaue" /><br/><br>
+
+        <p id="value"></p>
+        <button type="button" onClick="add()">+</button>
+        <button type="button" onclick="sub()">-</button>
+        <button type="button" onclick="multi()">*</button>
+        <button type="button" onclick="div()">/</button>
+        <button type="button" onclick="reminder()">%</button>
+        <button type="button" onclick="exponent()">**</button>
+
+        <button type="button" onclick="result()">Result</button>
+
+        
+    </form>
+    <div > the answer is = <div id="myanswer"></div></div>
+    
+</body>
+</html>

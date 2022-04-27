@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<script>
+    let map = new Map();
+    map.set("name","abhishek")
+    map.set("lname","suthar")
+    //alert(map.get("lname"))
+    console.log(map)
+
+
+
+    let newmap = new Map([
+        ["name", 4],
+        ["lname", 8]
+    ]);
+    newmap.set("name","abhi")
+    newmap.set(8,"p")
+    console.log(newmap)
+
+
+    // for(let lname of newmap.keys()){
+    //     //console.log(lname)
+
+    // }
+    newmap.forEach((value,key)=>{
+        console.log(value)
+        console.log(key)
+
+    })
+
+
+    let student = Array.from(newmap)
+    console.log(student)
+</script>
+<body>
+    
+</body>
+</html>

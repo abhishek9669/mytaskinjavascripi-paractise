@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<script>
+    let student = {
+        name: 'Student',
+        lname: 'Student1',
+        address: 'Student2'
+    };
+    let output= prompt("what do you want to know about the user", "")
+        if (output == "name" || output == "lname" ){
+            alert(student[output]);
+        }else{
+            alert("please enter valid value");
+        }
+</script>
+<body>
+    
+</body>
+</html>
